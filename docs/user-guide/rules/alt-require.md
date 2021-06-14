@@ -4,56 +4,32 @@ title: alt-require
 keywords:
   - alt
   - image
-  - accessiblity
+  - accessibility
 ---
 
-The `alt` attribute of an `<img>` element must be present and `alt` attribute of `area[href]` and `input[type=image]` must have a value.
+Alt of `img` must be present and alt of area[href] and input[type=image] must be set with a value.
 
-## Possible Configuration Values
+Level: warning
 
-```json
-{
-  "alt-require": "off",
-  "alt-require": "warn",
-  "alt-require": "error",
-  "alt-require": ["off"],
-  "alt-require": ["warn"],
-  "alt-require": ["error"]
-}
-```
+## Config value
 
-## Default
+1. true: enable rule
+2. false: disable rule
 
-```json
-{ "alt-require": "off" }
-```
+The following pattern are **not** considered rule violations:
 
----
-
-## Examples
-
-Examples of **correct** code for this rule:
-
+<!-- prettier-ignore -->
 ```html
 <img src="test.png" alt="test" />
 <input type="image" alt="test" />
 <area shape="circle" coords="180,139,14" href="test.html" alt="test" />
 ```
 
-Examples of **incorrect** code for this rule:
+The following pattern is considered a rule violation:
 
+<!-- prettier-ignore -->
 ```html
 <img src="test.png" />
 <input type="image" />
 <area shape="circle" coords="180,139,14" href="test.html" />
 ```
-
----
-
-## When Not To Use It
-
-If your project will not use `alt` on images.
-
-## Version
-
-This rule was introduced in HTMLHint `v0.9.1`.

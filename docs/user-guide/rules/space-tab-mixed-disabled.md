@@ -1,44 +1,30 @@
 ---
 id: space-tab-mixed-disabled
-title: space-tab-mixed-disabled
+title: space-tab-mixed-disabled # consider renaming to blankspace
 ---
 
-Do not mix tabs and spaces for indentation.
+Blank-space (space and tab) characters should not be mixed in the beginning of any line.
 
-## Possible Configuration Values
+Level: `warning`
+
+## Config values
+
+1. space: space mode (only spaces are valid for indentation)
+2. space4: space mode and require 4 space characters
+3. tab: tab mode (only tab characters are valid for indentation)
+4. false: disable rule
+
+### Example
 
 ```json
 {
-  "space-tab-mixed-disabled": "off",
-  "space-tab-mixed-disabled": "warn",
-  "space-tab-mixed-disabled": "error",
-  "space-tab-mixed-disabled": ["off"],
-  "space-tab-mixed-disabled": ["warn", { "mode": "tab" }],
-  "space-tab-mixed-disabled": ["warn", { "mode": "space", "size": 2 }],
-  "space-tab-mixed-disabled": ["error", { "mode": "tab" }],
-  "space-tab-mixed-disabled": ["error", { "mode": "space", "size": 2 }]
+  ...
+  "space-tab-mixed-disabled": space4
+  ...
 }
 ```
 
-## Default
-
-```json
-{ "space-tab-mixed-disabled": ["off", { "mode": "nomix", "space": 4 }] }
-```
-
-## Options
-
-This rule has an object option:
-
-- `"mode": "tab"` use tabs as indentation.
-- `"mode": "space"` use spaces as indentation.
-  - `"size": 0-8` count of spaces.
-
----
-
-## Examples
-
-Examples of **correct** code for this rule:
+The following patterns are **not** considered rule violations:
 
 <!-- prettier-ignore -->
 ```html
@@ -46,7 +32,7 @@ Examples of **correct** code for this rule:
 ········<img src="space.png" />
 ```
 
-Examples of **incorrect** code for this rule:
+The following pattern is considered a rule violation:
 
 <!-- prettier-ignore -->
 ```html
@@ -57,13 +43,3 @@ Examples of **incorrect** code for this rule:
 :::note
 In the examples above, spaces and tabs are represented by `·` and `→`, respectively, to make the difference visible.
 :::
-
----
-
-## When Not To Use It
-
-If your project will use mixed indentation.
-
-## Version
-
-This rule was introduced in HTMLHint `v0.9.6`.

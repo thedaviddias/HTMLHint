@@ -1,6 +1,23 @@
-# [1.0.0-beta.2](https://github.com/htmlhint/HTMLHint/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2020-06-25)
+## [0.15.1](https://github.com/htmlhint/HTMLHint/compare/v0.15.0...v0.15.1) (2021-06-11)
 
-* try to set version manually
+
+### Bug Fixes
+
+* Unexpected behavior of the html lang require rule ([#655](https://github.com/htmlhint/HTMLHint/issues/655)) ([068645e](https://github.com/htmlhint/HTMLHint/commit/068645e9111f42adfa0fae0e32e236d88052541c))
+
+# [0.15.0](https://github.com/htmlhint/HTMLHint/compare/v0.14.2...v0.15.0) (2021-06-10)
+
+
+### Features
+
+* **rules:** add html-lang-require rule ([#632](https://github.com/htmlhint/HTMLHint/issues/632)) ([51471a9](https://github.com/htmlhint/HTMLHint/commit/51471a99d2e946c124222f6a74fa3fbd1876ac69))
+
+## [0.14.2](https://github.com/htmlhint/HTMLHint/compare/v0.14.1...v0.14.2) (2020-11-11)
+
+
+### Bug Fixes
+
+* Link to configuration.md from options page ([#563](https://github.com/htmlhint/HTMLHint/issues/563)) ([9cb0a9c](https://github.com/htmlhint/HTMLHint/commit/9cb0a9c9fcafea4a8c4cd704c66e1faff92ecd7a))
 
 ## [0.14.1](https://github.com/htmlhint/HTMLHint/compare/v0.14.0...v0.14.1) (2020-06-25)
 

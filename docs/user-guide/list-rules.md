@@ -11,7 +11,7 @@ title: List of rules
 - [`doctype-html5`](/docs/user-guide/rules/doctype-html5): Invalid doctype.
 - [`head-script-disabled`](/docs/user-guide/rules/head-script-disabled): The `<script>` tag cannot be used in a tag.
 - [`style-disabled`](/docs/user-guide/rules/style-disabled): `<style>` tags cannot be used.
-- [`title-require`](/docs/user-guide/rules/title-require): `<title>` must be present in tag.
+- [`title-require`](/docs/user-guide/rules/title-require): `<title>` must be present in `<head>` tag.
 
 ### Attributes
 
@@ -22,6 +22,7 @@ title: List of rules
 - [`attr-value-double-quotes`](/docs/user-guide/rules/attr-value-double-quotes): Attribute values must be in double quotes.
 - [`attr-value-not-empty`](/docs/user-guide/rules/attr-value-not-empty): All attributes must have values.
 - [`alt-require`](/docs/user-guide/rules/alt-require): The alt attribute of an element must be present and alt attribute of area[href] and input[type=image] must have a value.
+- [`input-requires-label`](/docs/user-guide/rules/input-requires-label): All [ input ] tags must have a corresponding [ label ] tag.
 
 ### Tags
 
